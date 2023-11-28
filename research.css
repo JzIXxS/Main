@@ -6,12 +6,12 @@
 
 body {
   margin: 0; /* Remove default margin */
-  background-color: rgba(82, 150, 90  , 5); /* Set the background color to under the name and logo*/
+  background-color:white;
   text-align: center;
 }
 
 nav {
-  background-color: rgba(249, 231, 159  , 5); /* Set the background color to green */
+  background-color:whitesmoke;
   display: flex;
   justify-content: space-between; /* Add space between logo and school name */
   align-items: center;
@@ -41,7 +41,6 @@ nav {
 }
 
 .buttons-container button {
-  background-color: rgba(249, 231, 159  , 5);
   margin: 10px;
   padding: 10px;
   font-size: 30px;
