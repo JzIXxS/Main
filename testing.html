@@ -4,76 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="student portal">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <link rel="stylesheet" href="research.css">
-    <title>Student Portal</title>
+    <meta http-equiv="refresh" content="60">
+    <title>Sacrificials</title>
     <style>
-        body {
-            background-color: green;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .new1 {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(47.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+        }
+
+        nav {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            width: 160px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px;
+            color: black;
+            margin-left: 100px;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
             color: white;
-            text-align: center;
+            font-weight: 400;
+            background-color: rgb(48, 46, 46);
+            font-size: 16px;
+            padding: 10px 100px;
+            border: 2px solid black;
+            box-shadow: 10px 10px 5px black;
+        }
+
+        nav ul li a:hover {
+            text-decoration: none;
+            color: gray;
+            font-weight: 400;
+            background-color: rgb(48, 46, 46);
+            font-size: 16px;
+            padding: 10px 100px;
+            border: 2px solid black;
+            border-radius: 20px;
+            border-top-left-radius: 0;
+            opacity: 0.9;
+        }
+
+        h1 {
+            color: darkred;
+            font-size: 75px;
+            text-shadow: 10px 10px 5px black;
+        }
+
+        .counter {
+            position: absolute;
+            top: 38%;
+            left: 38%;
+        }
+
+        .strike {
+            opacity: 0;
+            transform: translateX(30px);
+            animation: moveup 0.5s linear forwards;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes moveup {
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        /* Additional CSS for the Members dropdown */
+        nav ul li:hover>ul {
+            display: block;
+            z-index: 1;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            padding: 0px;
             margin: 0;
         }
 
-        .container {
-            background-color: inherit;
-            padding: 20px;
+        nav ul ul li {
+            display: block;
         }
 
-        .buttons-container {
+        nav ul ul li a {
+            padding: 12px 50px;
+            font-size: 14px;
+            display: table;
+            width: 200px;
+            margin: 0;
+        }
+
+        nav ul ul li a:hover {
             background-color: white;
-            padding: 20px;
-        }
-
-        .buttons-container button {
-            margin: 5px;
-            padding: 10px;
-            font-size: 16px;
-            background-color: #3498db;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            background-size: cover; /* Ensure the background image covers the entire button */
-        }
-
-        .buttons-container button:hover {
-            background-color: #2980b9;
-        }
-
-        /* Add background images for the buttons */
-        button#teacherButton {
-            background-image: url('teacher-image.jpg'); /* Replace with the path to your teacher image */
-        }
-
-        button#studentButton {
-            background-image: url('student-image.jpg'); /* Replace with the path to your student image */
+            color: rgb(48, 46, 46);
+            border-radius: 20px;
+            border-top-right-radius: 0;
         }
     </style>
 </head>
 
 <body>
-    <nav>
-        <div class="container">
+    <div class="new1">
+        <nav>
             <img src="logo.jpg" class="logo">
-            <h1 id="h">CIELITO ZAMORA SENIOR HIGH SCHOOL</h1>
-        </div>
-    </nav>
-    <hr>    
-    <div class="buttons-container">
-        <button id="teacherButton" onclick="redirectToTeacherPage()">Teacher</button>
-        <button id="studentButton" onclick="redirectToStudentPage()">Student</button>
+            <h1>SACRIFICIALS</h1>
+            <ul>
+                <li><a href="#">Members</a>
+                    <ul>
+                        <li><a href="#">JC</a></li>
+                        <li><a href="#">MIKEL</a></li>
+                        <li><a href="#">JASTEEN</a></li>
+                        <li><a href="#">XANDREX</a></li>
+                        <li><a href="#">MARK</a></li>
+                        <li><a href="#">FRANZ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">Records</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </nav>
+
+        <img src="green.png" class="counter strike">
     </div>
-
-    <script>
-        function redirectToTeacherPage() {
-            window.location.href = "teacher.html"; // Replace with the actual teacher page URL
-        }
-
-        function redirectToStudentPage() {
-            window.location.href = "student.html"; // Replace with the actual student page URL
-        }
-    </script>
 </body>
 
 </html>

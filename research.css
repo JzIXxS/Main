@@ -6,17 +6,16 @@
 
 body {
   margin: 0; /* Remove default margin */
+  background-color: rgba(82, 150, 90  , 5); /* Set the background color to under the name and logo*/
   text-align: center;
-  background: url('green.png') no-repeat center center fixed;
-  background-size: cover;
 }
 
 nav {
-  background-color: rgba(231, 208, 105, 0.3); /* Set the background color to green */
+  background-color: rgba(249, 231, 159  , 5); /* Set the background color to green */
   display: flex;
   justify-content: space-between; /* Add space between logo and school name */
   align-items: center;
-  padding: 10px; /* Add some padding for better spacing */
+  padding: 20px; /* Add some padding for better spacing */
 }
 
 .container {
@@ -25,7 +24,6 @@ nav {
   justify-content: space-between;
   margin: 0 auto;
   font-size: 10px;
-  font-style: italic;
 }
 
 .logo {
@@ -36,18 +34,16 @@ nav {
 
 #h {
   color: black; /* Set text color to white */
-}
-
-hr {
-  border: 1px solid #ccc; /* Add a border to the hr element */
-  margin: 0; /* Remove default margin */
+  font-size: 40px;
 }
 .buttons-container {
-  margin-top: 20px;
+  margin-top: 100px;
 }
+
 .buttons-container button {
-  margin: 5px;
+  background-color: rgba(249, 231, 159  , 5);
+  margin: 10px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 30px;
   border-radius: 20px;
 }
