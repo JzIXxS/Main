@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="student portal">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="research.css">
+    <title>Student Portal</title>
+    <style>
+        body {
+            background-color: green;
+            color: white;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            background-color: inherit;
+            padding: 20px;
+        }
+
+        .buttons-container {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .buttons-container button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            background-size: cover; /* Ensure the background image covers the entire button */
+        }
+
+        .buttons-container button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Add background images for the buttons */
+        button#teacherButton {
+            background-image: url('teacher-image.jpg'); /* Replace with the path to your teacher image */
+        }
+
+        button#studentButton {
+            background-image: url('student-image.jpg'); /* Replace with the path to your student image */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <img src="logo.jpg" class="logo">
+            <h1 id="h">CIELITO ZAMORA SENIOR HIGH SCHOOL</h1>
+        </div>
+    </nav>
+    <hr>    
+    <div class="buttons-container">
+        <button id="teacherButton" onclick="redirectToTeacherPage()">Teacher</button>
+        <button id="studentButton" onclick="redirectToStudentPage()">Student</button>
+    </div>
+
+    <script>
+        function redirectToTeacherPage() {
+            window.location.href = "teacher.html"; // Replace with the actual teacher page URL
+        }
+
+        function redirectToStudentPage() {
+            window.location.href = "student.html"; // Replace with the actual student page URL
+        }
+    </script>
+</body>
+
+</html>

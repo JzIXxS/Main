@@ -6,6 +6,9 @@
 
 body {
   margin: 0; /* Remove default margin */
+  text-align: center;
+  background: url('green.png') no-repeat center center fixed;
+  background-size: cover;
 }
 
 nav {
@@ -38,4 +41,13 @@ nav {
 hr {
   border: 1px solid #ccc; /* Add a border to the hr element */
   margin: 0; /* Remove default margin */
+}
+.buttons-container {
+  margin-top: 20px;
+}
+.buttons-container button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 20px;
 }

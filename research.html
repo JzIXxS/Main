@@ -7,7 +7,7 @@
     <meta name="description" content="student portal">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="stylesheet" href="research.css">
-    <title>Student Portal Login</title>
+    <title>Student Portal</title>
 </head>
 
 <body>
@@ -17,8 +17,21 @@
             <h1 id="h">CIELITO ZAMORA SENIOR HIGH SCHOOL</h1>
         </div>
     </nav>
-    <hr>
-    <div>
-        <img src="green.png">
+    <hr>    
+    <div class="buttons-container">
+        <button onclick="redirectToTeacherPage()">Teacher</button>
+        <button onclick="redirectToStudentPage()">Student</button>
     </div>
+
+    <script>
+        function redirectToTeacherPage() {
+            window.location.href = "teacher.html"; // Replace with the actual teacher page URL
+        }
+
+        function redirectToStudentPage() {
+            window.location.href = "student.html"; // Replace with the actual student page URL
+        }
+    </script>
 </body>
+
+</html>
